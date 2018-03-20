@@ -4,16 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "cross-env node_modules/.bin/nodemon index.js",
-    "start": "node index.js",
+    "dev": "cross-env node_modules/.bin/nodemon lib/index.js",
+    "debug": "cross-env DEBUG=true node_modules/.bin/nodemon lib/index.js",
+    "start": "node lib/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "puppeteer": "^1.2.0",
-    "xregexp": "^4.1.1"
+    "moment": "^2.21.0",
+    "puppeteer": "^1.2.0"
   },
   "devDependencies": {
     "eslint": "^4.19.0",
