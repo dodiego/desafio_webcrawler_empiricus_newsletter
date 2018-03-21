@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "cross-env node_modules/.bin/nodemon lib/index.js",
-    "debug": "cross-env DEBUG=true node_modules/.bin/nodemon lib/index.js",
+    "dev": "cross-env node_modules/.bin/nodemon --ignore ../result.json lib/index.js",
+    "debug": "cross-env DEBUG=true node_modules/.bin/nodemon --ignore result.json lib/index.js",
     "start": "node lib/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
